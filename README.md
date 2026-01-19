@@ -26,7 +26,7 @@ For a local server:
 - Python: `python -m http.server 8000`
 - Node.js: Install `http-server` and run `http-server`
 
-## Accessibility (Hidden Gem)
+## Accessibility
 
 While the site appears as a standard recipe blog, it follows WCAG 2.2 guidelines subtly:
 - **Perceivable**: Descriptive alt text for recipe images, clear labels.
