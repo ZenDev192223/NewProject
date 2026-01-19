@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Haven - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header role="banner">
+        <h1>Recipe Haven</h1>
+        <nav role="navigation" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="blogs.html">Recipe Blogs</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main">
+        <section>
+            <h2>Share Your Recipe</h2>
+            <p>Have a family recipe or a new creation you'd like to share? We'd love to hear from you!</p>
+            <form id="contactForm">
+                <fieldset>
+                    <legend>Recipe Submission</legend>
+                    <div>
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required aria-describedby="nameError">
+                        <span id="nameError" class="error" role="alert" aria-live="polite"></span>
+                    </div>
+                    <div>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required aria-describedby="emailError">
+                        <span id="emailError" class="error" role="alert" aria-live="polite"></span>
+                    </div>
+                    <div>
+                        <label for="message">Recipe Details:</label>
+                        <textarea id="message" name="message" required aria-describedby="messageError" placeholder="Include ingredients, instructions, and any tips..."></textarea>
+                        <span id="messageError" class="error" role="alert" aria-live="polite"></span>
+                    </div>
+                    <button type="submit">Submit Recipe</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer role="contentinfo">
+        <p>&copy; 2026 Accessible Website. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
